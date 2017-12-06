@@ -1,5 +1,5 @@
-require './lib/operator'
-require './lib/train'
+require './lib/timetable/operator'
+require './lib/timetable/train'
 
 def generate_timetable(time)
   operator = Operator.new(time)

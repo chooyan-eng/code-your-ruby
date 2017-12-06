@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require './lib/timetable'
+require './lib/timetable/timetable'
 
 class TimetableTest < Minitest::Test
   def test_generate_timetable_at_11_09

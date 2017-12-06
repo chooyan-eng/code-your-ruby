@@ -1,6 +1,6 @@
 require 'minitest/autorun'
-require './lib/operator'
-require './lib/train'
+require './lib/timetable/operator'
+require './lib/timetable/train'
 
 class OperatorTest < Minitest::Test
   def test_new_local_train_at_11_10
