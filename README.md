@@ -1,10 +1,10 @@
 # Code Your Ruby
 
-Code The Ruby is a workspace to practice Ruby with code reviewing each other.
+Code Your Ruby is a workspace to practice Ruby with code reviewing each other.
 
 # これは何？
 
-Code The Rubyは、Ruby初級者がコードレビューを通してRubyの書き方や考え方を学ぶためのリポジトリです。  
+Code Your Rubyは、Ruby初級者がコードレビューを通してRubyの書き方や考え方を学ぶためのリポジトリです。  
 出題の内容を実装してこのリポジトリへプルリクを送り、それを他のRubyエンジニアがレビューすることで、自分ひとりでの勉強では得られない視点や技術を身に着けることができます。  
 
 「Rubyを仕事にしたくて本やネットで勉強してみたけど、本当にこの書き方で良いのか不安！」という方はぜひ「参加手順」を一読して参加してみてください！
