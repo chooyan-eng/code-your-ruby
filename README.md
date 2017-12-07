@@ -61,4 +61,4 @@ $ tree
 * このリポジトリのForkや再利用は自由です。同じような取り組みをもっと狭いチーム内でやってみたい、他の言語でやってみたいなどありましたらご自由にアレンジしてください。
 
 
-ご意見などがありましたら、Issues か [@chooyan_i18n](https://www.twitter.com/chooyan_i18n)（twitter）までご連絡ください。
+ご意見などがありましたら、[Issues](https://github.com/chooyan-eng/code-your-ruby/issues) か [@chooyan_i18n](https://www.twitter.com/chooyan_i18n)（twitter）までご連絡ください。
