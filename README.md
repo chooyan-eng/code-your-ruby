@@ -16,7 +16,7 @@ Code The Rubyは、Ruby初級者がコードレビューを通してRubyの書�
 細かなステップは以下の通りです。
 
 1. このリポジトリをForkします。
-1. Forkしたリポジトリをローカルにcloneします。
+1. ForkしたリポジトリをローカルにCloneします。
 1. `specification`ディレクトリの問題を確認します。どの問題からトライしても大丈夫です。
 1. `user`ディレクトリに自分のGitHubアカウント名でディレクトリを作成します。これが作業ディレクトリになります。
 1. 作業ディレクトリに、課題の実装コードを配置する`lib`ディレクトリとテストコードを配置する`test`ディレクトリを作成します。
@@ -61,4 +61,4 @@ $ tree
 * このリポジトリのForkや再利用は自由です。同じような取り組みをもっと狭いチーム内でやってみたい、他の言語でやってみたいなどありましたらご自由にアレンジしてください。
 
 
-ご意見などがありましたら chooyan.engineer@gmail.com か [@chooyan_i18n](https://www.twitter.com/chooyan_i18n)（twitter）までご連絡ください。
+ご意見などがありましたら、Issues か [@chooyan_i18n](https://www.twitter.com/chooyan_i18n)（twitter）までご連絡ください。
