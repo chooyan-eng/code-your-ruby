@@ -1,4 +1,4 @@
-# Code The Ruby
+# Code Your Ruby
 
 Code The Ruby is a workspace to practice Ruby with code reviewing each other.
 
