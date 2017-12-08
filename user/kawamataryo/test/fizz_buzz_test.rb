@@ -15,10 +15,10 @@ class TestFizzBuzz < Minitest::Test
 
   # アレンジパターン
   def test_fizz_buzz_arrange
-    assert_equal '6', fizz_buzz(6, set_fizz: 7, set_buzz: 11)
-    assert_equal 'Fizz', fizz_buzz(7, set_fizz: 7, set_buzz: 11)
-    assert_equal 'Buzz', fizz_buzz(11, set_fizz: 7, set_buzz: 11)
-    assert_equal 'FizzBuzz', fizz_buzz(77, set_fizz: 7, set_buzz: 11)
+    assert_equal '6', fizz_buzz(6, fizz_number: 7, buzz_number: 11)
+    assert_equal 'Fizz', fizz_buzz(7, fizz_number: 7, buzz_number: 11)
+    assert_equal 'Buzz', fizz_buzz(11, fizz_number: 7, buzz_number: 11)
+    assert_equal 'FizzBuzz', fizz_buzz(77, fizz_number: 7, buzz_number: 11)
   end
 
   # 数値に変換できる文字列が入力された時、数値に変換し出力できるか
