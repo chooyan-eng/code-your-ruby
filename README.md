@@ -66,5 +66,8 @@ $ tree
 * 問題は随時追加 / 更新予定です。
 * このリポジトリのForkや再利用は自由です。同じような取り組みをもっと狭いチーム内でやってみたい、他の言語でやってみたいなどありましたらご自由にアレンジしてください。
 
+Code Your Rubyを作ったきっかけなどをQiitaで記事にしました。併せてご覧ください。  
+[これからRubyで仕事したい人のためのリポジトリ「Code Your Ruby」を作りました | Qiita](https://qiita.com/chooyan_eng/items/46f5724202f90ab4004d)
+
 
 ご意見などがありましたら、[Issues](https://github.com/chooyan-eng/code-your-ruby/issues) か [@chooyan_i18n](https://www.twitter.com/chooyan_i18n)（twitter）までご連絡ください。
