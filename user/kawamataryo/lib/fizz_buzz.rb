@@ -1,16 +1,17 @@
 # fizz_buzz問題を出力
-def fizz_buzz(number, set_fizz: 3, set_buzz: 5)
-  # 入力数値の型チェッ
+def fizz_buzz(number, fizz_number: 3, buzz_number: 5)
+  # 入力数値の型チェック
   number = if number.is_a?(Integer)
              number
-           elsif !(number.to_i.zero?)  ||  number == '0'
+           elsif !number.to_i.zero? || number == '0'
              number.to_i
            else
              raise ArgumentError.new("数値に変換できない値が引数に渡されています")
            end
 
-  fizz = (number % set_fizz).zero?
-  buzz = (number % set_buzz).zero?
+  # fizz_buzz判定(割り切れるかどうか)
+  fizz = (number % fizz_number).zero?
+  buzz = (number % buzz_number).zero?
 
   if fizz && buzz
     'FizzBuzz'
