@@ -1,7 +1,7 @@
 # fizz_buzz問題を出力
 def fizz_buzz(number, fizz_number: 3, buzz_number: 5)
   # 入力数値の型チェック
-  number = if number.is_a?(Integer)
+  number = if number.kind_of?(Integer)
              number
            elsif !number.to_i.zero? || number == '0'
              number.to_i
