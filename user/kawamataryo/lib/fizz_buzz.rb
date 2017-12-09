@@ -2,10 +2,10 @@
 def check_type(number)
   if number.kind_of?(Integer) && number != 0
     number
-  elsif !number.to_i.zero? && number != '0'
+  elsif !(number.kind_of?(Float)) && !number.to_i.zero? && number != '0'
     number.to_i
   else
-    raise ArgumentError.new("数値に変換できない値又は実行範囲外の値が引数に渡されています 値:#{number}")
+    raise ArgumentError.new("実行範囲外の値が引数に渡されています 値:#{number}")
   end
 end
 
