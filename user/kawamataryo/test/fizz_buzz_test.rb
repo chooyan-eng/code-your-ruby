@@ -49,6 +49,14 @@ class TestFizzBuzz < Minitest::Test
       fizz_buzz('十五')
     end
     assert_equal '数値に変換できない値が入力されています。値:十五', e.message
+    e = assert_raises ArgumentError do
+      fizz_buzz(10, fizz_number: '十五')
+    end
+    assert_equal '数値に変換できない値が入力されています。値:十五', e.message
+    e = assert_raises ArgumentError do
+      fizz_buzz(10, buzz_number: '十五')
+    end
+    assert_equal '数値に変換できない値が入力されています。値:十五', e.message
   end
 
 end
