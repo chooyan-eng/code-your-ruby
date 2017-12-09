@@ -1,36 +1,6 @@
 require_relative '../lib/fizz_buzz'
 require 'minitest/autorun'
 
-# 引数の型チェックのテスト
-class TestCheckType < Minitest::Test
-  # 数値に変換できない文字列や、実行範囲外の数値が入力された時エラーを出力できるか
-  def test_raise_error
-    assert_raises ArgumentError do
-      check_type(0)
-    end
-    assert_raises ArgumentError do
-      check_type('0')
-    end
-    assert_raises ArgumentError do
-      check_type(-10)
-    end
-    assert_raises ArgumentError do
-      check_type(1.14)
-    end
-    assert_raises ArgumentError do
-      check_type('十五')
-    end
-  end
-
-  # エラーの際に適切なエラーメッセージを出力できるか
-  def test_output_error_message
-    e = assert_raises ArgumentError do
-      fizz_buzz('十五')
-    end
-    assert_equal '実行範囲外の値が引数に渡されています 値:十五', e.message
-  end
-
-end
 
 # fizz_buzz_問題のテスト
 class TestFizzBuzz < Minitest::Test
@@ -61,10 +31,24 @@ class TestFizzBuzz < Minitest::Test
     assert_equal 'FizzBuzz', fizz_buzz('15')
   end
 
-  # エラーでは無いが想定外の入力
+  # 特殊な値の入力に対応するか
   def test_unexpected
+    assert_equal 'FizzBuzz', fizz_buzz(0)
+    assert_equal 'FizzBuzz', fizz_buzz('0')
+    assert_equal 'FizzBuzz', fizz_buzz(-15)
+    assert_equal 'Fizz', fizz_buzz(6, fizz_number: -3)
+    assert_equal 'Buzz', fizz_buzz(10, buzz_number: -5)
+    assert_equal 'FizzBuzz', fizz_buzz(15, fizz_number: -3, buzz_number: -5)
     assert_equal 'Buzz', fizz_buzz(10, fizz_number:3, buzz_number:5)
     assert_equal 'FizzBuzz', fizz_buzz(10, fizz_number:5, buzz_number:5)
+  end
+
+  # エラーの際に適切なエラーメッセージを出力できるか
+  def test_output_error_message
+    e = assert_raises ArgumentError do
+      fizz_buzz('十五')
+    end
+    assert_equal '数値に変換できない値が入力されています。値:十五', e.message
   end
 
 end

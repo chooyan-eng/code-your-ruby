@@ -1,22 +1,15 @@
-# 引数が処理可能な値か検査する
-def check_type(number)
-  if number.kind_of?(Integer)
-    if number > 0
-      number
-    else
-      raise ArgumentError.new("実行範囲外の値が引数に渡されています 値:#{number}")
-    end
-  elsif !(number.kind_of?(Float)) && !number.to_i.zero? && number != '0'
-    number.to_i
-  else
-    raise ArgumentError.new("実行範囲外の値が引数に渡されています 値:#{number}")
-  end
-end
-
 # fizz_buzz問題を出力
 def fizz_buzz(number, fizz_number: 3, buzz_number: 5)
   # 引数の型チェック
-  number, fizz_number, buzz_number = [number, fizz_number, buzz_number].map { |num| check_type(num) }
+  number, fizz_number, buzz_number = [number, fizz_number, buzz_number].map { |val|
+    if val.kind_of?(Integer)
+      val
+    elsif !val.to_i.zero? || val == '0'
+      val.to_i
+    else
+      raise ArgumentError.new("数値に変換できない値が入力されています。値:#{val}")
+    end
+  }
 
   # fizz_buzz判定(割り切れるかどうか)
   fizz = (number % fizz_number).zero?
@@ -33,4 +26,3 @@ def fizz_buzz(number, fizz_number: 3, buzz_number: 5)
   end
 end
 
-puts fizz_buzz(10, fizz_number:3, buzz_number:5)
