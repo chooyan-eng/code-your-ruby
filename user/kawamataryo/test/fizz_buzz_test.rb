@@ -12,10 +12,13 @@ class TestCheckType < Minitest::Test
       check_type('0')
     end
     assert_raises ArgumentError do
-      check_type('十五')
+      check_type(-10)
     end
     assert_raises ArgumentError do
       check_type(1.14)
+    end
+    assert_raises ArgumentError do
+      check_type('十五')
     end
   end
 
@@ -56,6 +59,12 @@ class TestFizzBuzz < Minitest::Test
     assert_equal 'Fizz', fizz_buzz('3')
     assert_equal 'Buzz', fizz_buzz('5')
     assert_equal 'FizzBuzz', fizz_buzz('15')
+  end
+
+  # エラーでは無いが想定外の入力
+  def test_unexpected
+    assert_equal 'Buzz', fizz_buzz(10, fizz_number:3, buzz_number:5)
+    assert_equal 'FizzBuzz', fizz_buzz(10, fizz_number:5, buzz_number:5)
   end
 
 end

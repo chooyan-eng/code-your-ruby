@@ -1,7 +1,11 @@
 # 引数が処理可能な値か検査する
 def check_type(number)
-  if number.kind_of?(Integer) && number != 0
-    number
+  if number.kind_of?(Integer)
+    if number > 0
+      number
+    else
+      raise ArgumentError.new("実行範囲外の値が引数に渡されています 値:#{number}")
+    end
   elsif !(number.kind_of?(Float)) && !number.to_i.zero? && number != '0'
     number.to_i
   else
@@ -28,3 +32,5 @@ def fizz_buzz(number, fizz_number: 3, buzz_number: 5)
     number.to_s
   end
 end
+
+puts fizz_buzz(10, fizz_number:3, buzz_number:5)
