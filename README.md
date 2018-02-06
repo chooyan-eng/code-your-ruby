@@ -2,6 +2,13 @@
 
 Code Your Ruby is a workspace to practice Ruby with code reviewing each other.
 
+# For non-Japanese Developers
+Because owner of CodeYourRuby repository is Japanese, all resources here are written in Japanese. See the post below (post to dev.to) if you are interested in this repository.
+
+[How Do You Teach Yourself After Reading Books for Beginners?](https://dev.to/chooyan/how-do-you-teach-yourself-after-reading-books-for-beginners-2din)
+
+The basic idea of CodeYourRuby is introduced in the post above.
+
 # これは何？
 
 Code Your Rubyは、Ruby初級者がコードレビューを通してRubyの書き方や考え方を学ぶためのリポジトリです。  
@@ -68,6 +75,7 @@ $ tree
 
 Code Your Rubyを作ったきっかけなどをQiitaで記事にしました。併せてご覧ください。  
 [これからRubyで仕事したい人のためのリポジトリ「Code Your Ruby」を作りました | Qiita](https://qiita.com/chooyan_eng/items/46f5724202f90ab4004d)
+
 
 
 ご意見などがありましたら、[Issues](https://github.com/chooyan-eng/code-your-ruby/issues) か [@chooyan_i18n](https://www.twitter.com/chooyan_i18n)（twitter）までご連絡ください。
