@@ -1,0 +1,19 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+ruby '2.5.0'
+
+# gem "rails"
+group :development do
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'pry'
+end
+
+group :test do
+  gem 'fuubar'
+  gem 'rspec'
+end
