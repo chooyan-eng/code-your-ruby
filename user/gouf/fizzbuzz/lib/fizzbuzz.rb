@@ -21,5 +21,6 @@ module FizzBuzz
     return 'FizzBuzz' if n.fizz_buzz?
     return 'Fizz' if n.fizz?
     return 'Buzz' if n.buzz?
+    n.to_s
   end
 end
