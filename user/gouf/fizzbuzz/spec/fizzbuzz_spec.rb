@@ -1,0 +1,2 @@
+describe FizzBuzz do
+end
