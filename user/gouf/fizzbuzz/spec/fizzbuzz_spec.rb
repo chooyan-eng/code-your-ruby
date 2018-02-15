@@ -20,4 +20,12 @@ describe FizzBuzz do
       include_examples 'FizzBuzz', n, 'Buzz'
     end
   end
+
+  context 'divisible by 15 number' do
+    divisible = [15, 30, 45, 60, 75, 90]
+
+    divisible.each do |n|
+      include_examples 'FizzBuzz', n, 'FizzBuzz'
+    end
+  end
 end
